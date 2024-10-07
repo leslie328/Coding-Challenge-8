@@ -23,6 +23,26 @@ def init(self, name, salary, position, department):
     String details = employee.getDetails("James Johnson", "Designer", $"90000");
 }
 
+// Task 2: Create a Department Class
+const engineering= new department("Engineering");
+const SoftwareDeveloper= new department("SoftwareDeveloper");
+const IT= new department("IT");
+// Create employees
+const Alisa= new Manager("Alisa",50000,"Marketing Manager","Marketing");
+const John= new Employee("John", 80000, "SoftwareDeveloper", "IT")
+const James= new Employee("James", 90000 "Designer", "Engineering");
+
+// Add employees to departments
+Marketing.addManager(Alisa);
+IT.addEmployee(John);
+engineering.addEmployee(James);
+
+//Calculate Total salary for each department
+console.log(`Total salary for marketing: $${marketing.getDepartmentSalary()}`);
+console.log(`Total salary for SoftwareDeveloper:$${SoftwareDeveloper.getDepartmentSalary()}`)
+console.log(`Total salry for Designer:$${Designer.getDepartmentSalary()}`)
+
+
 
 
 }
